@@ -6,7 +6,7 @@
 
 <p align="justify">Quando é dada uma foto de um quarto a um ser humano, este consegue assimilar rapidamente os objetos na foto, observando o piso, cor da parede, cama, portas, janelas, e até consegue reproduzir o desenho de um novo quarto. Já para um computador essa imagem é apenas uma matriz de números, o computador não consegue compreender a imagem na fotografia, muito menos criar novos quartos.</p>
 
-<p align="justify">Os avanços tecnológicos dos últimos anos, que tornaram possível o processamento e a análise semântica de grandes bancos de dados, impulsionaram o desenvolvimento rápido de diversos modelos de visão computacional, em especial modelos que utilizam o aprendizado de máquina para a geração de conteúdo, os chamados modelos geradores. Um dos mais reconhecidos atualmente foi publicado em 2014, por Ian Goodfellow, que propôs um modelo chamado de <a href="https://papers.nips.cc/paper/5423-generative-adversarial-nets.pdf">Generative Adversarial Networks</a> (GANs). Esse modelo foimpioneiro em utilizar uma iteração inteligente entre duas redes neurais profundas que competem entre si para gerar conteúdo, utilizando uma base de dados pré-estabelecida.</p>
+<p align="justify">Os avanços tecnológicos dos últimos anos, que tornaram possível o processamento e a análise semântica de grandes bancos de dados, impulsionaram o desenvolvimento rápido de diversos modelos de visão computacional, em especial modelos que utilizam o aprendizado de máquina para a geração de conteúdo, os chamados modelos geradores. Um dos mais reconhecidos atualmente foi publicado em 2014, por Ian Goodfellow, que propôs um modelo chamado de <a href="https://papers.nips.cc/paper/5423-generative-adversarial-nets.pdf">Generative Adversarial Networks</a> (GANs). Esse modelo foi o pioneiro em utilizar uma iteração inteligente entre duas redes neurais profundas que competem entre si para gerar conteúdo, utilizando uma base de dados pré-estabelecida.</p>
 
 <p align="justify">As GANs surgiram como meio de treinar computadores a entenderem conceitos sem que seja explicitamente ensinado o significado desses conceitos, o tornando mais eficiente que os métodos tradicionais que dependem de humanos pré-rotulando dados, e desde então, tem ganhado destaque dentre os pesquisadores pois sua capacidade de assimilar dados brutos o torna um poderoso método de inteligência artificial. Voltando ao exemplo anterior, agora utilizando GANs o computador pode, depois de exposto a milhares de fotos de quartos, gerar novos quartos por conta própria, ou seja, o computador conseguiu assimilar o conceito de quarto e produzir imagens sem a intervenção de um ser humano.</p>
 
@@ -14,13 +14,15 @@
 
 <img  src=ImagensReadme/DCGAN-quartos.png> 
 
-<p align="justify">E na área de jogos digitais, é indiscutível a importância da geração automática de conteúdo, em particular na geração procedural de fases dos jogos, mas também no conteúdo visual. Ao gerar conteúdo automaticamente é possível auxiliar os designers e artistas a criar conteúdo com maior variedade e em menos tempo.</p>
+<p align="justify">E na área de jogos digitais, é indiscutível a importância da geração automática de conteúdo, em particular na <a href="https://www.worldscientific.com/doi/abs/10.1142/S0218213017600193">geração procedural de fases dos jogos</a>, mas também no <a href="https://www.springer.com/la/book/9783319427140>conteúdo visual</a>. Ao gerar conteúdo automaticamente é possível auxiliar os designers e artistas a criar conteúdo com maior variedade e em menos tempo.</p>
+
+<h3>Nossa missão</h3>
 
 <p align="justify">Nos anos de 1980, os gráficos para jogos NES eram baseados em blocos de imagens de 16×16 pixels e as telas eram formadas por matrizes desse blocos, porém como a capacidade de memória daquela época era muito baixa, a variedade era limitada, por exemplo, nas figuras abaixo podemos notar que a quantidade de blocos que compõem todo o jogo Super Mario Bros é inferior a 80 e como a tela inicial usa a repetição de muitos desses blocos para compor seu cenário.</p>
 
 <img width="300" heigth="200" src=ImagensReadme/tilesmario.png> <img width="300" heigth="200" src=ImagensReadme/firstscreenmario.png>
 
-<p align="justify"> A missão das GANs para esse projeto é conseguir reproduzir alguns blocos de 16×16 pixels suficientemente bons para construir um cenário, como pisos, árvores, água, pedras, etc.</p>
+<p align="justify"> A missão das GANs para esse projeto é conseguir reproduzir alguns blocos de 16×16 pixels suficientemente bons para construir um cenário, como pisos, árvores, água, pedras, etc. Mesmo se conseguirmos poucos blocos já será possível gerar uma fase, além disso o tamanho dos tiles permite que eles não sejam complexos.</p>
 
 <h3>Mas pera, o que são redes neurais???</h3>
 <p align="justify">Redes neurais são modelos computacionais inspirados no sistema nervoso central de animais, onde diversas camadas de neurônios se conectam entre si. O comportamento inteligente vem da capacidade de aprendizado da rede, que utiliza a interação entre seus neurônios, processando sinais e adaptando suas variáveis a fim de otimizar uma solução, que normalmente envolve reconhecer padrões.
@@ -158,6 +160,13 @@ Essa adaptação torna as redes neurais independentes em seu aprendizado, cabend
     <td>123(60.3%) </td>
   </tr>
 </table>
+
+<h3> Como cada rede se saiu?</h3>
+
+<p align="justify">Ambas as redes neurais utilizadas conseguiram gerar imagens que puderam ser aproveitadas. Em comparativo, pode-se dizer que a WGAN conseguiu melhores resultados mesmo com o tempo de aprendizado semelhante a DCGAN. Observando os gráficos dos cálculos dos erros das duas redes com o passar das iterações é possível notar o motivo: a WGAN conseguiu estabilizar o aprendizado das duas redes e assim conseguiram aprender de forma equilibrada e contínua até o fim das iterações, já o DCGAN sofreu com o chamado Mode Collapse, onde o discriminador acabou se tornando rapidamente mais eficiente que o Gerador, impedindo o seu desenvolvimento correto. (obs: clique no gráfico para ver ele maior)</p>
+
+<img width="250" heigth="400" src=Graficos/dcgan.png> <img width="250" heigth="400" src=Graficos/wgan.png>
+
 
 <h3>Conclusão: GANs funcionam! Mas calma lá.</h3>
 
