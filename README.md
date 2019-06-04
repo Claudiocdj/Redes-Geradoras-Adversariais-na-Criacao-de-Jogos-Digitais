@@ -14,7 +14,7 @@
 
 <img  src=ImagensReadme/DCGAN-quartos.png> 
 
-<p align="justify">E na área de jogos digitais, é indiscutível a importância da geração automática de conteúdo, em particular na <a href="https://www.worldscientific.com/doi/abs/10.1142/S0218213017600193">geração procedural de fases dos jogos</a>, mas também no <a href="https://www.springer.com/la/book/9783319427140>conteúdo visual</a>. Ao gerar conteúdo automaticamente é possível auxiliar os designers e artistas a criar conteúdo com maior variedade e em menos tempo.</p>
+<p align="justify">E na área de jogos digitais, é indiscutível a importância da geração automática de conteúdo, em particular na <a href="https://www.worldscientific.com/doi/abs/10.1142/S0218213017600193">geração procedural de fases dos jogos</a>, mas também no <a href="https://www.springer.com/la/book/9783319427140">conteúdo visual</a>. Ao gerar conteúdo automaticamente é possível auxiliar os designers e artistas a criar conteúdo com maior variedade e em menos tempo.</p>
 
 <h3>Nossa missão</h3>
 
@@ -25,9 +25,10 @@
 <p align="justify"> A missão das GANs para esse projeto é conseguir reproduzir alguns blocos de 16×16 pixels suficientemente bons para construir um cenário, como pisos, árvores, água, pedras, etc. Mesmo se conseguirmos poucos blocos já será possível gerar uma fase, além disso o tamanho dos tiles permite que eles não sejam complexos.</p>
 
 <h3>Mas pera, o que são redes neurais???</h3>
-<p align="justify">Redes neurais são modelos computacionais inspirados no sistema nervoso central de animais, onde diversas camadas de neurônios se conectam entre si. O comportamento inteligente vem da capacidade de aprendizado da rede, que utiliza a interação entre seus neurônios, processando sinais e adaptando suas variáveis a fim de otimizar uma solução, que normalmente envolve reconhecer padrões.
 
-Essa adaptação torna as redes neurais independentes em seu aprendizado, cabendo ao ser humano apenas orientar os dados de entrada e a saída esperada para o treinamento. Assim, uma única rede pode ser usada para compreender a fala humana ou reconhecer objetos visualmente sem quase nenhum apoio humano.</p>
+<p align="justify">Redes neurais são modelos computacionais inspirados no sistema nervoso central de animais, onde diversas camadas de neurônios se conectam entre si. O comportamento inteligente vem da capacidade de aprendizado da rede, que utiliza a interação entre seus neurônios, processando sinais e adaptando suas variáveis a fim de otimizar uma solução, que normalmente envolve reconhecer padrões.</p>
+
+<p align="justify">Essa adaptação torna as redes neurais independentes em seu aprendizado, cabendo ao ser humano apenas orientar os dados de entrada e a saída esperada para o treinamento. Assim, uma única rede pode ser usada para compreender a fala humana ou reconhecer objetos visualmente sem quase nenhum apoio humano.</p>
 
 <p>Link úteis para entender como uma rede neural aprende:</p>
 <ul>
